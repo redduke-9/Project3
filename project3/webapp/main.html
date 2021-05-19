@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>MAIN</title>
+</head>
+<style>
+ input[type=button]{
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  font-size: 28px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: white;
+}
+
+.navbar a {
+  float: left;
+  font-size: 28px;
+  color: white;
+  text-align: center;
+  padding: 20px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 28px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 20px 16px;
+  background-color: black;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: green;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+</style>
+
+</head>
+<body background="C:\Users\Sairam\OneDrive\Pictures\auction.jpg">
+<center>
+<marquee bgcolor="3268c" width="1000" behavior="alternate">
+<font face="Brush Script MT" size="8" color="white"><b><i>Secure Online Auction System</i></b>
+</font>
+</marquee><br>
+<div class="navbar">
+<table width="100%" height="50%" cellspacing=5>
+<tr align="center">
+<td>
+
+<div class="dropdown" style="position:left; left:80px;">
+  <button class="dropbtn" >ADMIN</button>
+  <div class="dropdown-content">
+    <a href="index.jsp">Login</a>
+    <a href="UserRegistration.jsp">Register</a>
+  </div>
+</div></td>
+<td><div class="dropdown">
+  <button class="dropbtn" >SELLER</button>
+  <div class="dropdown-content">
+    <a href="index.jsp">Login</a>
+    <a href="UserRegistration.jsp">Register</a>
+    <a href="CreateAuction.jsp">Create Auction</a>
+    <a href="My Auction.jsp">My Auction</a>
+    <a href="ChangePrivilege.jsp">Change My Privilege</a>
+  </div>
+</div></td>
+<td><div class="dropdown">
+  <button class="dropbtn" >BUYER</button>
+  <div class="dropdown-content">
+    <a href="index.jsp">Login</a>
+    <a href="UserRegistration.jsp">Register</a>
+    <a href="AddBalance.jsp">Add Balance</a>
+    <a href=" UpdateAccount.jsp">Update Account</a>
+    <a href=" UpdateAddress.jsp">Update Address</a>
+    <a href=" UpdateMobile.jsp">Update Mobile</a>
+    <a href=" UpdateAuction.jsp">Update Auction</a>
+    <a href ="MyBids.jsp">My Bids</a>
+    <a href="productbid.jsp">Product Bid</a>
+    <a href="Rating.jsp">Rating</a>
+    
+  </div>
+</div></td>
+<td><input type=button onClick="parent.location='FAQ.jsp'" value='FAQs'/></td>
+<td><input type=button onClick="parent.location='ComplaintFiling.jsp'"
+ value='COMPLAINT'/></td>
+
+
+</tr>
+</table>
+</div>
+
+<footer>
+<a href="www.google.com"></a>
+</footer>
+
+</body>
+</html>
